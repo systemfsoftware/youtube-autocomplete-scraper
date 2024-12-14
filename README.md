@@ -1,64 +1,96 @@
-## PlaywrightCrawler template
+# Youtube AutoComplete Scraper
 
-This template is a production ready boilerplate for developing an [Actor](https://apify.com/actors) with `PlaywrightCrawler`. Use this to bootstrap your projects using the most up-to-date code.
+A TypeScript library for scraping YouTube's autocomplete suggestions with intelligent deduplication.
 
-> We decided to split Apify SDK into two libraries, Crawlee and Apify SDK v3. Crawlee will retain all the crawling and scraping-related tools and will always strive to be the best [web scraping](https://apify.com/web-scraping) library for its community. At the same time, Apify SDK will continue to exist, but keep only the Apify-specific features related to building actors on the Apify platform. Read the upgrading guide to learn about the changes.
-> 
+## Features
 
-## Resources
+- Scrapes YouTube's autocomplete API to get search suggestions
+- Uses pglite for efficient similarity filtering
+- Removes near-duplicate suggestions using trigram similarity
+- Configurable similarity threshold
+- TypeScript support
+- Ready to deploy on Apify platform
 
-If you're looking for examples or want to learn more visit:
-
-- [Crawlee + Apify Platform guide](https://crawlee.dev/docs/guides/apify-platform)
-- [Documentation](https://crawlee.dev/api/playwright-crawler/class/PlaywrightCrawler) and [examples](https://crawlee.dev/docs/examples/playwright-crawler)
-- [Node.js tutorials](https://docs.apify.com/academy/node-js) in Academy
-- [Scraping single-page applications with Playwright](https://blog.apify.com/scraping-single-page-applications-with-playwright/)
-- [How to scale Puppeteer and Playwright](https://blog.apify.com/how-to-scale-puppeteer-and-playwright/)
-- [Integration with Zapier](https://apify.com/integrations), Make, GitHub, Google Drive and other apps
-- [Video guide on getting scraped data using Apify API](https://www.youtube.com/watch?v=ViYYDHSBAKM)
-- A short guide on how to build web scrapers using code templates:
-
-[web scraper template](https://www.youtube.com/watch?v=u-i-Korzf8w)
-
-
-## Getting started
-
-For complete information [see this article](https://docs.apify.com/platform/actors/development#build-actor-locally). To run the actor use the following command:
+## Installation
 
 ```bash
-apify run
+git clone https://github.com/yourusername/youtube-autocomplete-scraper.git
+cd youtube-autocomplete-scraper
+pnpm install
 ```
 
-## Deploy to Apify
+## Usage
 
-### Connect Git repository to Apify
+There are two ways to use this scraper:
 
-If you've created a Git repository for the project, you can easily connect to Apify:
+### 1. Local Development
 
-1. Go to [Actor creation page](https://console.apify.com/actors/new)
-2. Click on **Link Git Repository** button
+Run the scraper locally by setting the required environment variables and using `pnpm start`:
 
-### Push project on your local machine to Apify
+```bash
+# Set your input
+export INPUT='{"query": "how to make"}'
 
-You can also deploy the project on your local machine to Apify without the need for the Git repository.
+# Run the scraper
+pnpm start
+```
 
-1. Log in to Apify. You will need to provide your [Apify API Token](https://console.apify.com/account/integrations) to complete this action.
+The scraper will output results to the console and save them in the `apify_storage` directory.
 
-    ```bash
-    apify login
-    ```
+### 2. Deploy to Apify
 
-2. Deploy your Actor. This command will deploy and build the Actor on the Apify Platform. You can find your newly created Actor under [Actors -> My Actors](https://console.apify.com/actors?tab=my).
+This scraper is designed to run on the Apify platform. To deploy:
 
-    ```bash
-    apify push
-    ```
+1. Push this code to your Apify actor
+2. Set the input JSON in Apify console:
 
-## Documentation reference
+```json
+{
+  "query": "how to make",
+  "similarityThreshold": 0.7,
+  "maxResults": 100,
+  "language": "en",
+  "region": "US"
+}
+```
 
-To learn more about Apify and Actors, take a look at the following resources:
+## How it Works
 
-- [Apify SDK for JavaScript documentation](https://docs.apify.com/sdk/js)
-- [Apify SDK for Python documentation](https://docs.apify.com/sdk/python)
-- [Apify Platform documentation](https://docs.apify.com/platform)
-- [Join our developer community on Discord](https://discord.com/invite/jyEM2PRvMU)
+Under the hood, this scraper does a few key things:
+
+1. **API Querying**: Makes requests to YouTube's internal autocomplete API endpoint to get raw suggestions
+
+2. **Deduplication**: Uses pglite (a lightweight Postgres implementation) to filter out near-duplicate results:
+
+   - Converts suggestions to trigrams (3-letter sequences)
+   - Calculates similarity scores between suggestions using trigram matching
+   - Filters out suggestions that are too similar based on a configurable threshold
+   - For example, "how to cook pasta" and "how to cook noodles" might be considered unique, while "how to make pancake" and "how to make pancakes" would be filtered as duplicates
+
+3. **Result Processing**: Cleans and normalizes the suggestions before returning them
+
+## Input Schema
+
+The scraper accepts the following input parameters:
+
+```typescript
+interface Input {
+  query: string // The search query to get suggestions for
+  similarityThreshold?: number // How similar suggestions need to be to be considered duplicates (0-1)
+  maxResults?: number // Maximum number of suggestions to return
+  language?: string // Language code for suggestions
+  region?: string // Region code for suggestions
+}
+```
+
+## Output
+
+The scraper outputs an array of unique autocomplete suggestions. Results are saved to the default dataset in Apify storage and can be accessed via the Apify API or console.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT

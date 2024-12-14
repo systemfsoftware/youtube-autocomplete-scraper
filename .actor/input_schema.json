@@ -1,0 +1,28 @@
+{
+  "title": "YouTube Crawler",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "keyPhrase": {
+      "title": "Key Phrase",
+      "type": "string",
+      "description": "Base phrase to get YouTube's autocomplete suggestions (e.g., 'how to' will find suggestions like 'how to cook', 'how to draw', etc.)",
+      "editor": "textfield",
+      "default": "Elon Musk"
+    },
+    "maxRequestsPerCrawl": {
+      "title": "Max Requests per Crawl",
+      "type": "integer",
+      "description": "Maximum number of requests that can be made by this crawler.",
+      "default": 10
+    },
+    "similarityThreshold": {
+      "title": "Similarity Threshold",
+      "type": "integer",
+      "description": "Threshold for determining if two suggestions are similar (0 to 100). Higher values mean suggestions need to be more similar to be considered duplicates.",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 50
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "youtube-autocomplete-scraper",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "An Apify actor for scraping YouTube's autocomplete suggestions with intelligent deduplication using pglite",
+  "keywords": [
+    "youtube",
+    "autocomplete",
+    "suggestions",
+    "scraper",
+    "apify",
+    "actor",
+    "deduplication",
+    "pglite",
+    "trigram",
+    "similarity",
+    "search",
+    "youtube-api",
+    "crawler"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "tshy": {
+    "dialects": [
+      "esm"
+    ],
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/main.ts"
+    }
+  },
+  "scripts": {
+    "start": "corepack pnpm run start:dev",
+    "start:prod": "node dist/main.js",
+    "start:dev": "tsx src/main.ts",
+    "build": "tsup",
+    "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1",
+    "format": "dprint fmt",
+    "postinstall": "npx crawlee install-playwright-browsers"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.71.2",
+    "@effect/platform-node": "^0.66.2",
+    "@electric-sql/pglite": "^0.2.15",
+    "apify": "^3.2.6",
+    "crawlee": "^3.11.5",
+    "effect": "^3.11.7",
+    "playwright": "*"
+  },
+  "devDependencies": {
+    "@total-typescript/tsconfig": "^1.0.4",
+    "dprint": "^0.47.6",
+    "tsup": "^8.3.5",
+    "tsx": "^4.6.2",
+    "turbo": "^2.3.3",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
+}

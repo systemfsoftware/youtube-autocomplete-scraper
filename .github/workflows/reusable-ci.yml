@@ -1,0 +1,33 @@
+name: Reusable CI Workflow
+
+on:
+  workflow_call:
+    inputs:
+      upload-artifacts:
+        type: boolean
+        default: false
+        required: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [22.x]
+    steps:
+    - uses: actions/checkout@v4.1.7
+    - uses: ./.github/actions/turbo-build 
+      with:
+        node-version: ${{ matrix.node-version }}
+
+  all:
+    needs: [build]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Check job status
+        if: contains(needs.*.result, 'failure')
+        run: exit 1
+      - name: All jobs completed successfully
+        if: success()
+        run: echo "All jobs completed successfully!"

@@ -1,0 +1,27 @@
+name: Continuous Integration and Deployment
+
+on:
+  push:
+    branches: [ master ]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  pull-requests: write
+
+jobs:
+  run-ci:
+    uses: ./.github/workflows/reusable-ci.yml
+
+  all:
+    needs: [run-ci]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Check job status
+        if: contains(needs.*.result, 'failure')
+        run: exit 1
+      - name: All jobs completed successfully
+        if: success()
+        run: echo "All jobs completed successfully!"

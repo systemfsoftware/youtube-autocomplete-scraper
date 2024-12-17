@@ -1,0 +1,32 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    labels:
+      - "automerge"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 25
+    groups:
+      drizzle:
+        patterns:
+          - "drizzle-kit"
+          - "drizzle-orm"
+      effect:
+        patterns:
+          - "@effect/*"
+          - "effect"
+      otel:
+        patterns:
+          - "@opentelemetry/*"
+      tooling:
+        patterns:
+          - "turbo"
+          - "tsx"
+          - "dprint"
+          - "@microsoft/api-extractor"
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly

@@ -44,12 +44,12 @@
     "postinstall": "npx crawlee install-playwright-browsers"
   },
   "dependencies": {
-    "@effect/platform": "^0.73.1",
-    "@effect/platform-node": "^0.69.1",
+    "@effect/platform": "^0.74.0",
+    "@effect/platform-node": "^0.70.0",
     "@electric-sql/pglite": "^0.2.15",
     "apify": "^3.2.6",
     "crawlee": "^3.11.5",
-    "effect": "^3.12.4",
+    "effect": "^3.12.5",
     "playwright": "*"
   },
   "devDependencies": {

@@ -15,8 +15,8 @@ importers:
         specifier: ^0.70.0
         version: 0.70.0(@effect/platform@0.74.0(effect@3.12.5))(effect@3.12.5)
       '@electric-sql/pglite':
-        specifier: ^0.2.15
-        version: 0.2.15
+        specifier: ^0.2.16
+        version: 0.2.16
       apify:
         specifier: ^3.2.6
         version: 3.2.6
@@ -226,8 +226,8 @@ packages:
     peerDependencies:
       effect: ^3.12.5
 
-  '@electric-sql/pglite@0.2.15':
-    resolution: {integrity: sha512-Jiq31Dnk+rg8rMhcSxs4lQvHTyizNo5b269c1gCC3ldQ0sCLrNVPGzy+KnmonKy1ZArTUuXZf23/UamzFMKVaA==}
+  '@electric-sql/pglite@0.2.16':
+    resolution: {integrity: sha512-dCSHpoOKuTxecaYhWDRp2yFTN3XWcMPMrBVl5yOR8VZEUprz4+R3iuU7BipmlsqBnBDO/6l9H/C2ZwJdunkWyw==}
 
   '@esbuild/aix-ppc64@0.23.1':
     resolution: {integrity: sha512-6VhYk1diRqrhBAqpJEdjASR/+WVRtfjpqKuNw11cLiaWpAT/Uu+nokB+UJnevzy/P9C/ty6AOe0dwueMrGh/iQ==}
@@ -2410,7 +2410,7 @@ snapshots:
       find-my-way-ts: 0.1.5
       multipasta: 0.2.5
 
-  '@electric-sql/pglite@0.2.15': {}
+  '@electric-sql/pglite@0.2.16': {}
 
   '@esbuild/aix-ppc64@0.23.1':
     optional: true

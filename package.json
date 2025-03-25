@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@effect/platform": "^0.80.1",
-    "@effect/platform-node": "^0.76.2",
+    "@effect/platform-node": "^0.76.4",
     "@electric-sql/pglite": "^0.2.17",
     "apify": "^3.3.2",
     "crawlee": "^3.13.0",

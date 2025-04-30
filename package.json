@@ -56,7 +56,7 @@
     "@total-typescript/tsconfig": "^1.0.4",
     "dprint": "^0.49.1",
     "tsup": "^8.4.0",
-    "tsx": "^4.19.3",
+    "tsx": "^4.19.4",
     "turbo": "^2.5.2",
     "typescript": "^5.8.3"
   },

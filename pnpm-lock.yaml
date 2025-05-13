@@ -15,8 +15,8 @@ importers:
         specifier: ^0.80.0
         version: 0.80.0(@effect/cluster@0.29.1(@effect/platform@0.82.0(effect@3.15.0))(@effect/rpc@0.55.1(@effect/platform@0.82.0(effect@3.15.0))(effect@3.15.0))(@effect/sql@0.33.1(@effect/experimental@0.44.1(@effect/platform@0.82.0(effect@3.15.0))(effect@3.15.0))(@effect/platform@0.82.0(effect@3.15.0))(effect@3.15.0))(effect@3.15.0))(@effect/platform@0.82.0(effect@3.15.0))(@effect/rpc@0.55.1(@effect/platform@0.82.0(effect@3.15.0))(effect@3.15.0))(@effect/sql@0.33.1(@effect/experimental@0.44.1(@effect/platform@0.82.0(effect@3.15.0))(effect@3.15.0))(@effect/platform@0.82.0(effect@3.15.0))(effect@3.15.0))(effect@3.15.0)
       '@electric-sql/pglite':
-        specifier: ^0.3.0
-        version: 0.3.0
+        specifier: ^0.3.1
+        version: 0.3.1
       apify:
         specifier: ^3.4.1
         version: 3.4.1
@@ -297,8 +297,8 @@ packages:
       '@effect/platform': ^0.80.1
       effect: ^3.14.1
 
-  '@electric-sql/pglite@0.3.0':
-    resolution: {integrity: sha512-ou1PA24kStSNpQVGdzDg1FGRzO7AQ3O6OX5FryupMdHkSfSswG2ZVXjCzzJKK88KLk+Q4QinKjZIUtmMeec5rg==}
+  '@electric-sql/pglite@0.3.1':
+    resolution: {integrity: sha512-Kpbd2FMXnM5I56ZpMnGKZhv+h31ipeimgyJVb1C+nWFTikp33z0TTwmksEtHpPinuqKiMJblH2OJM0RubKvJgg==}
 
   '@esbuild/aix-ppc64@0.25.0':
     resolution: {integrity: sha512-O7vun9Sf8DFjH2UtqK8Ku3LkquL9SZL8OLY1T5NZkA34+wG3OQF7cl4Ql8vdNzM6fzBbYfLaiRLIOZ+2FOCgBQ==}
@@ -2704,7 +2704,7 @@ snapshots:
       effect: 3.15.0
       uuid: 11.1.0
 
-  '@electric-sql/pglite@0.3.0': {}
+  '@electric-sql/pglite@0.3.1': {}
 
   '@esbuild/aix-ppc64@0.25.0':
     optional: true

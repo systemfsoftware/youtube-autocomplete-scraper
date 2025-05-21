@@ -18,8 +18,8 @@ importers:
         specifier: ^0.3.1
         version: 0.3.1
       apify:
-        specifier: ^3.4.1
-        version: 3.4.1
+        specifier: ^3.4.2
+        version: 3.4.2
       crawlee:
         specifier: ^3.13.5
         version: 3.13.5(playwright@1.52.0)
@@ -117,10 +117,6 @@ packages:
     engines: {node: '>=16.0.0'}
     hasBin: true
 
-  '@crawlee/core@3.13.3':
-    resolution: {integrity: sha512-jbK7RiuLZc1TU+kduIZybI2e1WQbzrfjjf9iz2mGhi+Bv2fjV9GumlyEPgBJDw55mlUUOIJjyggX1wA+mGUR5w==}
-    engines: {node: '>=16.0.0'}
-
   '@crawlee/core@3.13.5':
     resolution: {integrity: sha512-C7yUt8XJGQkKimD/D/qmOzjiR8YzvQrsxVcIBfXT783MRT6WO3Z7v4en5/VOVAt3SN7hT1hFPeXMKlZRXAFeVQ==}
     engines: {node: '>=16.0.0'}
@@ -136,10 +132,6 @@ packages:
   '@crawlee/linkedom@3.13.5':
     resolution: {integrity: sha512-QLon9gmDOPcEnXm5R7ctacsefg2HgCMdUtU77rdEC3SNV6xORKJh+yRT3P4WJVTfqfTauW6A7Pda7mV3XCJ0tA==}
     engines: {node: '>=16.0.0'}
-
-  '@crawlee/memory-storage@3.13.3':
-    resolution: {integrity: sha512-0+HlKBjzkW73u3ptxnQth+oJSIJ1otkxYEcIFQXBXqtYfWaARY0xa7XTeJme0Wow1m9haGSPdac19HAXhUQyrg==}
-    engines: {node: '>= 16'}
 
   '@crawlee/memory-storage@3.13.5':
     resolution: {integrity: sha512-JI97C2MBsy8T0mHRH95fhgAyYSBuBQCuj9w980XNAwNy+7uoxSsRdN74Cf+46q4x7v+zU/vshM2wwEvAzcihow==}
@@ -167,16 +159,8 @@ packages:
     resolution: {integrity: sha512-1n7QcmaKEbO9MdAsMQpjYXNPl63WrqX5EkBMi1WZRRhmn5cal9Q5Ef0pXgnxRPqUZKlLW18lRnkN3yeln4gAxg==}
     engines: {node: '>=16.0.0'}
 
-  '@crawlee/types@3.13.3':
-    resolution: {integrity: sha512-6ftoJ1UJs/orLeFORyLx5FjVD6V8TfcL7x5kSVx8IMx8KmYs0WR/ttnIQ7fr+nhk5BvtwOFDx0kg1mFfUtok8A==}
-    engines: {node: '>=16.0.0'}
-
   '@crawlee/types@3.13.5':
     resolution: {integrity: sha512-HfFhxiBaIzaaht//3znt4Yp0Y5pp0+Uurv8UH5ETF5MGZUjSKY1PBcy7kVBsenxmag06k+R9+fBrn71slR3zWA==}
-    engines: {node: '>=16.0.0'}
-
-  '@crawlee/utils@3.13.3':
-    resolution: {integrity: sha512-DGl56gkZ/cLzGVFrcJfV6ZlTNCINTNbro4EoXdheAFK7N4OHpC7U8HHNYYuO8+tH2wf9rhaPyZJCkFrtWSmV+w==}
     engines: {node: '>=16.0.0'}
 
   '@crawlee/utils@3.13.5':
@@ -979,11 +963,11 @@ packages:
   any-promise@1.3.0:
     resolution: {integrity: sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A==}
 
-  apify-client@2.12.3:
-    resolution: {integrity: sha512-z12/QmvgJoVustbuujJ4fASfRq8K3b3fdxcXRm0mxFP6ufjmJt9k13755rXytvNnHaKRmKh0ViUIRUQ4al9lOg==}
+  apify-client@2.12.4:
+    resolution: {integrity: sha512-cmvX7Nf4oafkKuTdfWk69n41YpTh1PSGtq11qJyUmoQVpU1Af/rrFvJZEj6rJLFgSbsY9OXN9W2vGheMSGsPtQ==}
 
-  apify@3.4.1:
-    resolution: {integrity: sha512-BoW2IXog6qeP7/7jELzEFzU7r7hwBIFbnOBBf+ybYmvNNl/+bht9sHYtet94guLy+oj1CwXvXVXF4/lQzBTAuw==}
+  apify@3.4.2:
+    resolution: {integrity: sha512-ev1OdyyHJdvPt19aZ8uzzRPcAzsCivv3IYGZdN634U7wWk3EdVv4kLulfs4AOdanj2TnzbDPbYme91io71/RtA==}
     engines: {node: '>=16.0.0'}
 
   async-retry@1.3.3:
@@ -2004,8 +1988,8 @@ packages:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
     engines: {node: '>=v12.22.7'}
 
-  semver@7.7.1:
-    resolution: {integrity: sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==}
+  semver@7.7.2:
+    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -2485,33 +2469,6 @@ snapshots:
       yargonaut: 1.1.4
       yargs: 17.7.2
 
-  '@crawlee/core@3.13.3':
-    dependencies:
-      '@apify/consts': 2.41.0
-      '@apify/datastructures': 2.0.3
-      '@apify/log': 2.5.18
-      '@apify/pseudo_url': 2.0.59
-      '@apify/timeout': 0.3.2
-      '@apify/utilities': 2.15.5
-      '@crawlee/memory-storage': 3.13.3
-      '@crawlee/types': 3.13.3
-      '@crawlee/utils': 3.13.3
-      '@sapphire/async-queue': 1.5.5
-      '@vladfrangu/async_event_emitter': 2.4.6
-      csv-stringify: 6.5.2
-      fs-extra: 11.3.0
-      got-scraping: 4.1.1
-      json5: 2.2.3
-      minimatch: 9.0.5
-      ow: 0.28.2
-      stream-json: 1.9.1
-      tldts: 6.1.86
-      tough-cookie: 5.1.2
-      tslib: 2.8.1
-      type-fest: 4.41.0
-    transitivePeerDependencies:
-      - supports-color
-
   '@crawlee/core@3.13.5':
     dependencies:
       '@apify/consts': 2.41.0
@@ -2588,19 +2545,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@crawlee/memory-storage@3.13.3':
-    dependencies:
-      '@apify/log': 2.5.18
-      '@crawlee/types': 3.13.3
-      '@sapphire/async-queue': 1.5.5
-      '@sapphire/shapeshift': 3.9.7
-      content-type: 1.0.5
-      fs-extra: 11.3.0
-      json5: 2.2.3
-      mime-types: 2.1.35
-      proper-lockfile: 4.1.2
-      tslib: 2.8.1
-
   '@crawlee/memory-storage@3.13.5':
     dependencies:
       '@apify/log': 2.5.18
@@ -2665,30 +2609,9 @@ snapshots:
       yargonaut: 1.1.4
       yargs: 17.7.2
 
-  '@crawlee/types@3.13.3':
-    dependencies:
-      tslib: 2.8.1
-
   '@crawlee/types@3.13.5':
     dependencies:
       tslib: 2.8.1
-
-  '@crawlee/utils@3.13.3':
-    dependencies:
-      '@apify/log': 2.5.18
-      '@apify/ps-tree': 1.2.0
-      '@crawlee/types': 3.13.3
-      '@types/sax': 1.2.7
-      cheerio: 1.0.0-rc.12
-      file-type: 20.5.0
-      got-scraping: 4.1.1
-      ow: 0.28.2
-      robots-parser: 3.0.1
-      sax: 1.4.1
-      tslib: 2.8.1
-      whatwg-mimetype: 4.0.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@crawlee/utils@3.13.5':
     dependencies:
@@ -3228,11 +3151,11 @@ snapshots:
 
   any-promise@1.3.0: {}
 
-  apify-client@2.12.3:
+  apify-client@2.12.4:
     dependencies:
       '@apify/consts': 2.41.0
       '@apify/log': 2.5.18
-      '@crawlee/types': 3.13.3
+      '@crawlee/types': 3.13.5
       agentkeepalive: 4.6.0
       async-retry: 1.3.3
       axios: 1.9.0
@@ -3244,20 +3167,20 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  apify@3.4.1:
+  apify@3.4.2:
     dependencies:
       '@apify/consts': 2.41.0
       '@apify/input_secrets': 1.1.72
       '@apify/log': 2.5.18
       '@apify/timeout': 0.3.2
       '@apify/utilities': 2.15.5
-      '@crawlee/core': 3.13.3
-      '@crawlee/types': 3.13.3
-      '@crawlee/utils': 3.13.3
-      apify-client: 2.12.3
+      '@crawlee/core': 3.13.5
+      '@crawlee/types': 3.13.5
+      '@crawlee/utils': 3.13.5
+      apify-client: 2.12.4
       fs-extra: 11.3.0
       ow: 0.28.2
-      semver: 7.7.1
+      semver: 7.7.2
       tslib: 2.8.1
       ws: 8.18.2
     transitivePeerDependencies:
@@ -4386,7 +4309,7 @@ snapshots:
     dependencies:
       xmlchars: 2.2.0
 
-  semver@7.7.1: {}
+  semver@7.7.2: {}
 
   shebang-command@2.0.0:
     dependencies:

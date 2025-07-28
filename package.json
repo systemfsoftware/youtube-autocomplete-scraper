@@ -49,7 +49,7 @@
     "@electric-sql/pglite": "^0.3.5",
     "apify": "^3.4.3",
     "crawlee": "^3.13.10",
-    "effect": "^3.17.1",
+    "effect": "^3.17.2",
     "playwright": "*"
   },
   "devDependencies": {

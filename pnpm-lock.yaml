@@ -18,8 +18,8 @@ importers:
         specifier: ^0.3.6
         version: 0.3.6
       apify:
-        specifier: ^3.4.3
-        version: 3.4.3
+        specifier: ^3.4.4
+        version: 3.4.4
       crawlee:
         specifier: ^3.14.0
         version: 3.14.0(playwright@1.54.1)
@@ -117,10 +117,6 @@ packages:
     engines: {node: '>=16.0.0'}
     hasBin: true
 
-  '@crawlee/core@3.13.10':
-    resolution: {integrity: sha512-0UXiwq9PspfxZ7j6ry9b0drzyKKBjHNwCTXiBnV+xnkAJ7UkJwAr7x59OV645gtsf2Hdj2y1ePz25WMkYrkehw==}
-    engines: {node: '>=16.0.0'}
-
   '@crawlee/core@3.14.0':
     resolution: {integrity: sha512-trAOycy1AOa+GBujAIVn0JURqP8qoBsTToUxrzyQVN+BXuKnKXj24g08SR65QJic99PJhvgxD3QbF8bl0BCEXA==}
     engines: {node: '>=16.0.0'}
@@ -136,10 +132,6 @@ packages:
   '@crawlee/linkedom@3.14.0':
     resolution: {integrity: sha512-228fE71a65x96RivxP2uoOPQFIb2wE42HOI+1dd+ziDhPhZQSjVbt1savyC7OxNLf6mGa00BrwfCp61DCkzsIw==}
     engines: {node: '>=16.0.0'}
-
-  '@crawlee/memory-storage@3.13.10':
-    resolution: {integrity: sha512-K42pkuw+j6F2eXoenQlGFMFuK4klyHfHrLy6XmLhi7htGsC9wBj8903DV0abl7UYzPyeR9QkHtQTrzfThGKVgw==}
-    engines: {node: '>= 16'}
 
   '@crawlee/memory-storage@3.14.0':
     resolution: {integrity: sha512-d08vhtTe0agd6RPGW9LqkbbfGhgiuTgreAE8oAVG8peZIMYbUboB8ja7PRCR/dvQxUXulYlDAjOCeYQQyCwc2w==}
@@ -167,16 +159,8 @@ packages:
     resolution: {integrity: sha512-5iAt9qyqydkxYnvWf+O4jfGpJIgbfYVKg9yKo2kKeqE43e7zVFU4CSKNArkoyUq90EyYbvnQ7xmsGf8aABwmjw==}
     engines: {node: '>=16.0.0'}
 
-  '@crawlee/types@3.13.10':
-    resolution: {integrity: sha512-wZFM6OeQOXBWm9OutWAiN0DY1k+ltmYkDpT0OoDq7aoJbUKAAhb6o32pMRQFgG4/WBN6s0n78fKkJQmo/tp+RA==}
-    engines: {node: '>=16.0.0'}
-
   '@crawlee/types@3.14.0':
     resolution: {integrity: sha512-P9Wu9/ADdbwf9WY7gnovcNETkTDvtBPBH62RF0xcAuInBMacnkbvfO/OMkP//5PXzpulyihxdPn1FAor3JruXQ==}
-    engines: {node: '>=16.0.0'}
-
-  '@crawlee/utils@3.13.10':
-    resolution: {integrity: sha512-S1JxifT6z1MMj85IosRuX1sWcIBXNbqPktFcO6ANPmhIFn/lBZHb6tbPwMVF5iccHPOwjcijvsIsI7XlOWS+sg==}
     engines: {node: '>=16.0.0'}
 
   '@crawlee/utils@3.14.0':
@@ -982,8 +966,8 @@ packages:
   apify-client@2.12.6:
     resolution: {integrity: sha512-6KTvH4UPjW0/yYu2Dx/51O5DVx+835A8oxlJLvpr1OvjWYAxBiR9MLo0V2xwAMdT8W9a7Bxk3hhjnG6FOAd/gA==}
 
-  apify@3.4.3:
-    resolution: {integrity: sha512-c4R/k5ilKF0aDyCroeEd8sWW24hVFOyIT1LLQW7uMBlcPwpl0HG2iaq01fbWAesHa9brjcI3OUR43uk7UNap8Q==}
+  apify@3.4.4:
+    resolution: {integrity: sha512-9Xm1Ls4XtbBOwvrB3vB1BF7kvSSErtDtiHis8OGyC1UYFHy7HtqG9skxCtnbMVbYuoYrymLebbK9lY1/qmiqXg==}
     engines: {node: '>=16.0.0'}
 
   async-retry@1.3.3:
@@ -992,8 +976,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@1.10.0:
-    resolution: {integrity: sha512-/1xYAC4MP/HEG+3duIhFr4ZQXR4sQXOIe+o6sdqzeykGLx6Upp/1p8MHqhINOvGeP7xyNHe7tsiJByc4SSVUxw==}
+  axios@1.11.0:
+    resolution: {integrity: sha512-1Lx3WLFQWm3ooKDYZD1eXmoGO9fxYQjrycfHFC8P0sCfQVXyROp0p9PFWBehewBOdCwHc+f/b8I0fMto5eSfwA==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -1052,8 +1036,8 @@ packages:
     resolution: {integrity: sha512-kfzR4zzQtAE9PC7CzZsjl3aBNbXWuXiSeOCdLcPpBfGW8YuCqQHcRPFDbr/BPVmd3EEPVpuFzLyuT/cUhPr4OQ==}
     engines: {node: '>=12.20'}
 
-  caniuse-lite@1.0.30001727:
-    resolution: {integrity: sha512-pB68nIHmbN6L/4C6MH1DokyR3bYqFwjaSs/sWDHGj4CTcFtQUQMuJftVwWkXq7mNWOybD3KhUv3oWHoGxgP14Q==}
+  caniuse-lite@1.0.30001731:
+    resolution: {integrity: sha512-lDdp2/wrOmTRWuoB5DpfNkC0rJDU8DqRa6nYL6HK6sytw70QMopt/NIc/9SM7ylItlBWfACXk0tEn37UWM/+mg==}
 
   chalk@1.1.3:
     resolution: {integrity: sha512-U3lRVLMSlsCfjqYPbLyVv11M9CPW4I728d6TCKMAOJueEeB9/8o+eSsMnxPJD+Q+K909sdESg7C+tIkoH6on1A==}
@@ -1378,8 +1362,8 @@ packages:
     resolution: {integrity: sha512-G6NsmEW15s0Uw9XnCg+33H3ViYRyiM0hMrMhhqQOR8NFc5GhYrI+6I3u7OTw7b91J2g8rtvMBZJDbcGb2YUniw==}
     engines: {node: '>= 18'}
 
-  form-data@4.0.3:
-    resolution: {integrity: sha512-qsITQPfmvMOSAdeyZ+12I1c+CKSstAFAwu+97zrnWAbIr5u8wfsExUzCesVLC8NgHuRUqNN4Zy6UPWUTRGslcA==}
+  form-data@4.0.4:
+    resolution: {integrity: sha512-KrGhL9Q4zjj0kiUt5OO4Mr/A/jlI2jDYs5eHBpYHPcBEVSiipAvn2Ko2HnPe20rmcuuvMHNdZFp+4IlGTMF0Ow==}
     engines: {node: '>= 6'}
 
   from@0.1.7:
@@ -2477,33 +2461,6 @@ snapshots:
       yargonaut: 1.1.4
       yargs: 17.7.2
 
-  '@crawlee/core@3.13.10':
-    dependencies:
-      '@apify/consts': 2.43.0
-      '@apify/datastructures': 2.0.3
-      '@apify/log': 2.5.20
-      '@apify/pseudo_url': 2.0.61
-      '@apify/timeout': 0.3.2
-      '@apify/utilities': 2.16.2
-      '@crawlee/memory-storage': 3.13.10
-      '@crawlee/types': 3.13.10
-      '@crawlee/utils': 3.13.10
-      '@sapphire/async-queue': 1.5.5
-      '@vladfrangu/async_event_emitter': 2.4.6
-      csv-stringify: 6.6.0
-      fs-extra: 11.3.0
-      got-scraping: 4.1.2
-      json5: 2.2.3
-      minimatch: 9.0.5
-      ow: 0.28.2
-      stream-json: 1.9.1
-      tldts: 7.0.10
-      tough-cookie: 5.1.2
-      tslib: 2.8.1
-      type-fest: 4.41.0
-    transitivePeerDependencies:
-      - supports-color
-
   '@crawlee/core@3.14.0':
     dependencies:
       '@apify/consts': 2.43.0
@@ -2580,19 +2537,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@crawlee/memory-storage@3.13.10':
-    dependencies:
-      '@apify/log': 2.5.20
-      '@crawlee/types': 3.13.10
-      '@sapphire/async-queue': 1.5.5
-      '@sapphire/shapeshift': 3.9.7
-      content-type: 1.0.5
-      fs-extra: 11.3.0
-      json5: 2.2.3
-      mime-types: 2.1.35
-      proper-lockfile: 4.1.2
-      tslib: 2.8.1
-
   '@crawlee/memory-storage@3.14.0':
     dependencies:
       '@apify/log': 2.5.20
@@ -2657,30 +2601,9 @@ snapshots:
       yargonaut: 1.1.4
       yargs: 17.7.2
 
-  '@crawlee/types@3.13.10':
-    dependencies:
-      tslib: 2.8.1
-
   '@crawlee/types@3.14.0':
     dependencies:
       tslib: 2.8.1
-
-  '@crawlee/utils@3.13.10':
-    dependencies:
-      '@apify/log': 2.5.20
-      '@apify/ps-tree': 1.2.0
-      '@crawlee/types': 3.13.10
-      '@types/sax': 1.2.7
-      cheerio: 1.0.0-rc.12
-      file-type: 20.5.0
-      got-scraping: 4.1.2
-      ow: 0.28.2
-      robots-parser: 3.0.1
-      sax: 1.4.1
-      tslib: 2.8.1
-      whatwg-mimetype: 4.0.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@crawlee/utils@3.14.0':
     dependencies:
@@ -3225,10 +3148,10 @@ snapshots:
     dependencies:
       '@apify/consts': 2.43.0
       '@apify/log': 2.5.20
-      '@crawlee/types': 3.13.10
+      '@crawlee/types': 3.14.0
       agentkeepalive: 4.6.0
       async-retry: 1.3.3
-      axios: 1.10.0
+      axios: 1.11.0
       content-type: 1.0.5
       ow: 0.28.2
       tslib: 2.8.1
@@ -3236,16 +3159,16 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  apify@3.4.3:
+  apify@3.4.4:
     dependencies:
       '@apify/consts': 2.43.0
       '@apify/input_secrets': 1.2.1
       '@apify/log': 2.5.20
       '@apify/timeout': 0.3.2
       '@apify/utilities': 2.16.2
-      '@crawlee/core': 3.13.10
-      '@crawlee/types': 3.13.10
-      '@crawlee/utils': 3.13.10
+      '@crawlee/core': 3.14.0
+      '@crawlee/types': 3.14.0
+      '@crawlee/utils': 3.14.0
       apify-client: 2.12.6
       fs-extra: 11.3.0
       ow: 0.28.2
@@ -3264,10 +3187,10 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.10.0:
+  axios@1.11.0:
     dependencies:
       follow-redirects: 1.15.9
-      form-data: 4.0.3
+      form-data: 4.0.4
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
@@ -3294,7 +3217,7 @@ snapshots:
 
   browserslist@4.25.1:
     dependencies:
-      caniuse-lite: 1.0.30001727
+      caniuse-lite: 1.0.30001731
       electron-to-chromium: 1.5.192
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.1)
@@ -3332,7 +3255,7 @@ snapshots:
 
   callsites@4.2.0: {}
 
-  caniuse-lite@1.0.30001727: {}
+  caniuse-lite@1.0.30001731: {}
 
   chalk@1.1.3:
     dependencies:
@@ -3707,7 +3630,7 @@ snapshots:
 
   form-data-encoder@4.1.0: {}
 
-  form-data@4.0.3:
+  form-data@4.0.4:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8

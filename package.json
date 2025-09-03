@@ -45,11 +45,11 @@
   },
   "dependencies": {
     "@effect/platform": "^0.90.6",
-    "@effect/platform-node": "^0.96.0",
+    "@effect/platform-node": "^0.96.1",
     "@electric-sql/pglite": "^0.3.7",
     "apify": "^3.4.4",
     "crawlee": "^3.14.1",
-    "effect": "^3.17.9",
+    "effect": "^3.17.11",
     "playwright": "*"
   },
   "devDependencies": {

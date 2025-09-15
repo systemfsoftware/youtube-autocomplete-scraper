@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@total-typescript/tsconfig": "^1.0.4",
-    "dprint": "^0.50.1",
+    "dprint": "^0.50.2",
     "tsup": "^8.5.0",
     "tsx": "^4.20.5",
     "turbo": "^2.5.6",

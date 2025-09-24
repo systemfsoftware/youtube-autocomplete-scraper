@@ -22,13 +22,13 @@ importers:
         version: 3.4.5
       crawlee:
         specifier: ^3.15.0
-        version: 3.15.0(@types/node@24.5.2)(playwright@1.55.0)
+        version: 3.15.0(@types/node@24.5.2)(playwright@1.55.1)
       effect:
         specifier: ^3.17.14
         version: 3.17.14
       playwright:
         specifier: '*'
-        version: 1.55.0
+        version: 1.55.1
     devDependencies:
       '@total-typescript/tsconfig':
         specifier: ^1.0.4
@@ -1901,13 +1901,13 @@ packages:
   pkg-types@1.3.1:
     resolution: {integrity: sha512-/Jm5M4RvtBFVkKWRu2BLUTNP8/M2a+UwuAX+ae4770q1qVGtfjG+WTCupoZixokjmHiry8uI+dlY8KXYV5HVVQ==}
 
-  playwright-core@1.55.0:
-    resolution: {integrity: sha512-GvZs4vU3U5ro2nZpeiwyb0zuFaqb9sUiAJuyrWpcGouD8y9/HLgGbNRjIph7zU9D3hnPaisMl9zG9CgFi/biIg==}
+  playwright-core@1.55.1:
+    resolution: {integrity: sha512-Z6Mh9mkwX+zxSlHqdr5AOcJnfp+xUWLCt9uKV18fhzA8eyxUd8NUWzAjxUh55RZKSYwDGX0cfaySdhZJGMoJ+w==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.55.0:
-    resolution: {integrity: sha512-sdCWStblvV1YU909Xqx0DhOjPZE4/5lJsIS84IfN9dAZfcl/CIZ5O8l3o0j7hPMjDvqoTF8ZUcc+i/GL5erstA==}
+  playwright@1.55.1:
+    resolution: {integrity: sha512-cJW4Xd/G3v5ovXtJJ52MAOclqeac9S/aGGgRzLabuF8TnIb6xHvMzKIa6JmrRzUkeXJgfL1MhukP0NK6l39h3A==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -2461,14 +2461,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@crawlee/browser-pool@3.15.0(playwright@1.55.0)':
+  '@crawlee/browser-pool@3.15.0(playwright@1.55.1)':
     dependencies:
       '@apify/log': 2.5.22
       '@apify/timeout': 0.3.2
       '@crawlee/core': 3.15.0
       '@crawlee/types': 3.15.0
       fingerprint-generator: 2.1.72
-      fingerprint-injector: 2.1.72(playwright@1.55.0)
+      fingerprint-injector: 2.1.72(playwright@1.55.1)
       lodash.merge: 4.6.2
       nanoid: 3.3.11
       ow: 0.28.2
@@ -2478,22 +2478,22 @@ snapshots:
       tiny-typed-emitter: 2.1.0
       tslib: 2.8.1
     optionalDependencies:
-      playwright: 1.55.0
+      playwright: 1.55.1
     transitivePeerDependencies:
       - supports-color
 
-  '@crawlee/browser@3.15.0(playwright@1.55.0)':
+  '@crawlee/browser@3.15.0(playwright@1.55.1)':
     dependencies:
       '@apify/timeout': 0.3.2
       '@crawlee/basic': 3.15.0
-      '@crawlee/browser-pool': 3.15.0(playwright@1.55.0)
+      '@crawlee/browser-pool': 3.15.0(playwright@1.55.1)
       '@crawlee/types': 3.15.0
       '@crawlee/utils': 3.15.0
       ow: 0.28.2
       tslib: 2.8.1
       type-fest: 4.41.0
     optionalDependencies:
-      playwright: 1.55.0
+      playwright: 1.55.1
     transitivePeerDependencies:
       - supports-color
 
@@ -2650,13 +2650,13 @@ snapshots:
       proper-lockfile: 4.1.2
       tslib: 2.8.1
 
-  '@crawlee/playwright@3.15.0(playwright@1.55.0)':
+  '@crawlee/playwright@3.15.0(playwright@1.55.1)':
     dependencies:
       '@apify/datastructures': 2.0.3
       '@apify/log': 2.5.22
       '@apify/timeout': 0.3.2
-      '@crawlee/browser': 3.15.0(playwright@1.55.0)
-      '@crawlee/browser-pool': 3.15.0(playwright@1.55.0)
+      '@crawlee/browser': 3.15.0(playwright@1.55.1)
+      '@crawlee/browser-pool': 3.15.0(playwright@1.55.1)
       '@crawlee/core': 3.15.0
       '@crawlee/types': 3.15.0
       '@crawlee/utils': 3.15.0
@@ -2670,17 +2670,17 @@ snapshots:
       string-comparison: 1.3.0
       tslib: 2.8.1
     optionalDependencies:
-      playwright: 1.55.0
+      playwright: 1.55.1
     transitivePeerDependencies:
       - puppeteer
       - supports-color
 
-  '@crawlee/puppeteer@3.15.0(playwright@1.55.0)':
+  '@crawlee/puppeteer@3.15.0(playwright@1.55.1)':
     dependencies:
       '@apify/datastructures': 2.0.3
       '@apify/log': 2.5.22
-      '@crawlee/browser': 3.15.0(playwright@1.55.0)
-      '@crawlee/browser-pool': 3.15.0(playwright@1.55.0)
+      '@crawlee/browser': 3.15.0(playwright@1.55.1)
+      '@crawlee/browser-pool': 3.15.0(playwright@1.55.1)
       '@crawlee/types': 3.15.0
       '@crawlee/utils': 3.15.0
       cheerio: 1.0.0-rc.12
@@ -3469,24 +3469,24 @@ snapshots:
 
   content-type@1.0.5: {}
 
-  crawlee@3.15.0(@types/node@24.5.2)(playwright@1.55.0):
+  crawlee@3.15.0(@types/node@24.5.2)(playwright@1.55.1):
     dependencies:
       '@crawlee/basic': 3.15.0
-      '@crawlee/browser': 3.15.0(playwright@1.55.0)
-      '@crawlee/browser-pool': 3.15.0(playwright@1.55.0)
+      '@crawlee/browser': 3.15.0(playwright@1.55.1)
+      '@crawlee/browser-pool': 3.15.0(playwright@1.55.1)
       '@crawlee/cheerio': 3.15.0
       '@crawlee/cli': 3.15.0(@types/node@24.5.2)
       '@crawlee/core': 3.15.0
       '@crawlee/http': 3.15.0
       '@crawlee/jsdom': 3.15.0
       '@crawlee/linkedom': 3.15.0
-      '@crawlee/playwright': 3.15.0(playwright@1.55.0)
-      '@crawlee/puppeteer': 3.15.0(playwright@1.55.0)
+      '@crawlee/playwright': 3.15.0(playwright@1.55.1)
+      '@crawlee/puppeteer': 3.15.0(playwright@1.55.1)
       '@crawlee/utils': 3.15.0
       import-local: 3.2.0
       tslib: 2.8.1
     optionalDependencies:
-      playwright: 1.55.0
+      playwright: 1.55.1
     transitivePeerDependencies:
       - '@types/node'
       - bufferutil
@@ -3748,12 +3748,12 @@ snapshots:
       header-generator: 2.1.72
       tslib: 2.8.1
 
-  fingerprint-injector@2.1.72(playwright@1.55.0):
+  fingerprint-injector@2.1.72(playwright@1.55.1):
     dependencies:
       fingerprint-generator: 2.1.72
       tslib: 2.8.1
     optionalDependencies:
-      playwright: 1.55.0
+      playwright: 1.55.1
 
   fix-dts-default-cjs-exports@1.0.1:
     dependencies:
@@ -4322,11 +4322,11 @@ snapshots:
       mlly: 1.7.4
       pathe: 2.0.3
 
-  playwright-core@1.55.0: {}
+  playwright-core@1.55.1: {}
 
-  playwright@1.55.0:
+  playwright@1.55.1:
     dependencies:
-      playwright-core: 1.55.0
+      playwright-core: 1.55.1
     optionalDependencies:
       fsevents: 2.3.2
 

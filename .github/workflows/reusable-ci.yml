@@ -15,7 +15,7 @@ jobs:
       matrix:
         node-version: [22.x]
     steps:
-    - uses: actions/checkout@v4.2.2
+    - uses: actions/checkout@v6.0.2
     - uses: ./.github/actions/turbo-build 
       with:
         node-version: ${{ matrix.node-version }}

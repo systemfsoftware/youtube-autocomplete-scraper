@@ -48,7 +48,7 @@
     "@effect/platform-node": "^0.107.0",
     "@electric-sql/pglite": "^0.5.1",
     "apify": "^3.7.2",
-    "crawlee": "^3.16.0",
+    "crawlee": "^3.17.0",
     "effect": "^3.21.2",
     "playwright": "*"
   },
